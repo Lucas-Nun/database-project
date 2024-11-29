@@ -1,4 +1,4 @@
-# my webapp made in flask.
+# my database webapp made in flask.
 
 ## what was the purpose 
 
