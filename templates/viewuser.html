@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>{{ title }}</h1>
+
+    
+    <div class="navbar">
+        <nav>
+            <a href="admin" class="style">x</a>
+        </nav>
+    </div>
+    
+    <br><br><br><br><br><br><br>
+
+    
+    <div class="useroutput">
+    {% if people %}
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>SSN</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Gender</th>
+                    <th>Age</th>
+                    <th>Role</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for person in people %}
+                <tr>
+                    <td>{{ person.ssn }}</td>
+                    <td>{{ person.firstname }}</td>
+                    <td>{{ person.lastname }}</td>
+                    <td>{{ person.gender }}</td>
+                    <td>{{ person.age }}</td>
+                    <td>{{ person.role }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p>No users found.</p>
+    {% endif %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<br><br><br><br><br><br><br>
+
+<div class="container">
+    <h1>delete user</h1>
+
+    <div class="navbar">
+        <nav>
+            <a href="admin" class="style">x</a>
+        </nav>
+    </div>
+    
+    <form method="post" action="/deleteuser">
+
+    <div class="box">
+    <p>select user to delete</p>
+    <label for="delete"></label>
+    <input type="text" id="delete" name="delete" placeholder="Enter your delete"><br><br>
+
+
+    <button type="submit">delete</button>
+    </div>
+
+</body>
+</html>

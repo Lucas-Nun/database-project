@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <h1>database login</h1>
+
+    <br><br><br><br><br><br><br>
+    <div class="login">
+        <p>login</p>
+
+        <form method="post" action="/">
+            <label for="ssn"></label>
+            <input type="text" id="ssn" name="ssn" placeholder="Enter your SSN"><br><br>
+            
+            <label for="password"></label>
+            <input type="password" id="password" name="password" placeholder="Enter your password"><br><br>
+            
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>

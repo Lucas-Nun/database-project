@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container2">
+        <h1>add user</h1>
+
+        <br><br><br><br><br><br><br>
+
+        <div class="navbar">
+            <nav>
+                <a href="admin" class="style">x</a>
+            </nav>
+        </div>
+
+        <form method="post" action="/updateuser">
+    
+        <div class="box2">
+        <p>enter user to update</p>
+        <label for="snn"></label>
+        <input type="text" id="ssn" name="ssn" placeholder="Enter ssn of updated user"><br><br>
+        <label for="fistname"></label>
+        <input type="text" id="firstname" name="firstname" placeholder="Enter firstname"><br><br>
+        <label for="lastname"></label>
+        <input type="text" id="lastname" name="lastname" placeholder="Enter lastname"><br><br>
+        <label for="gender"></label>
+        <input type="text" id="gender" name="gender" placeholder="Enter gender"><br><br>
+        <label for="age"></label>
+        <input type="text" id="age" name="age" placeholder="Enter age"><br><br>
+        <label for="password"></label>
+        <input type="text" id="password" name="password" placeholder="Enter password"><br><br>
+        <label for="role"></label>
+        <input type="text" id="role" name="role" placeholder="Enter role"><br><br>
+    
+    
+        <button type="submit">update</button>
+        </div>
+        <br><br><br><br><br>
+
+
+</body>
+</html>
